@@ -15,8 +15,8 @@ import java.util.Map.Entry;
  */
 public class Fert {
     
-    private Map<NutriElement , Double> elementsComposition = new LinkedHashMap<>();
-    private String name;
+    private final Map<NutriElement , Double> elementsComposition = new LinkedHashMap<>();
+    private final String name;
 
     public Fert(String name) {
         this.name = name;

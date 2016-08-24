@@ -23,6 +23,10 @@ public class Cycle {
         fert.addElement(Factory.K, 6.1);
         
         System.out.println(fert);
+        
+        
+        MainForm mainForm = new MainForm();
+        mainForm.setVisible(true);
     }
     
 }
