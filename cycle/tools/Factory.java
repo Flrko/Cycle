@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cycle;
+package cycle.tools;
+
+import cycle.objects.NutriElement;
 
 /**
  *

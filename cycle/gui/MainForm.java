@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cycle;
+package cycle.gui;
+
+import cycle.tools.Support;
+
 
 /**
  *
@@ -16,6 +19,7 @@ public class MainForm extends javax.swing.JFrame {
      */
     public MainForm() {
         initComponents();
+        Support.centerWindow(this);
     }
 
     /**

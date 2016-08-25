@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cycle;
+package cycle.gui;
 
+import cycle.tools.Support;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -20,6 +21,7 @@ public class FertRedactor extends javax.swing.JDialog {
     public FertRedactor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        Support.centerWindow(this);
         tModel = (DefaultTableModel) elemTable.getModel();
     }
 
@@ -43,6 +45,7 @@ public class FertRedactor extends javax.swing.JDialog {
         cancelB = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Fertilizer Redactor");
 
         jLabel1.setText("Name:");
 
