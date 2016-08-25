@@ -6,7 +6,7 @@
 package cycle;
 
 import cycle.tools.Factory;
-import cycle.objects.Fert;
+import cycle.objects.fertilizing.Fert;
 import cycle.gui.MainForm;
 
 /**

@@ -5,7 +5,7 @@
  */
 package cycle.tools;
 
-import cycle.objects.NutriElement;
+import cycle.objects.fertilizing.NutriElement;
 
 /**
  *
