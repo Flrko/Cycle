@@ -5,7 +5,9 @@
  */
 package cycle.tools;
 
+import cycle.objects.GrowCalendar;
 import cycle.objects.fertilizing.NutriElement;
+import java.util.Date;
 
 /**
  *
@@ -17,4 +19,12 @@ public class Factory {
     public final static NutriElement K = new NutriElement("K");
     public final static NutriElement S  = new NutriElement("S");
     public final static NutriElement Mg  = new NutriElement("Mg");
+    
+    
+    public GrowCalendar makeGrowCalendar(Date startDate, int cyclePeriod) {
+        
+        GrowCalendar growCalendar = new GrowCalendar(startDate);
+        
+        return growCalendar;
+    }
 }

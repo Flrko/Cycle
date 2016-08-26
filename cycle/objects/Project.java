@@ -11,15 +11,23 @@ package cycle.objects;
  */
 public class Project {
     
+    private final String name;
     private final Plant plant;
     private final FeedScheme feedScheme;
     private final GrowCalendar growCalendar;
     private final GrowToolsPack growTools;
 
-    public Project(Plant plant, FeedScheme feedScheme, GrowCalendar growCalendar, GrowToolsPack growTools) {
+    public Project(String name, Plant plant, FeedScheme feedScheme, GrowCalendar growCalendar, GrowToolsPack growTools) {
+        this.name = name;
         this.plant = plant;
         this.feedScheme = feedScheme;
         this.growCalendar = growCalendar;
         this.growTools = growTools;
-    }    
+    }
+
+//    public Project(String name) {
+//        this.name = name;
+//        plant = null;
+//    }
+    
 }
