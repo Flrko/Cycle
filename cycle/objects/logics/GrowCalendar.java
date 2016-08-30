@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cycle.objects;
+package cycle.objects.logics;
 
 import cycle.tools.CycleStage;
 import java.util.Date;

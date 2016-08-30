@@ -5,7 +5,7 @@
  */
 package cycle.tools;
 
-import cycle.objects.GrowCalendar;
+import cycle.objects.logics.GrowCalendar;
 import cycle.objects.fertilizing.NutriElement;
 import java.util.Date;
 
