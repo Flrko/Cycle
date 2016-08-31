@@ -5,8 +5,12 @@
  */
 package cycle.tools;
 
+import cycle.objects.GrowToolsPack;
+import cycle.objects.Plant;
 import cycle.objects.logics.GrowCalendar;
 import cycle.objects.fertilizing.NutriElement;
+import cycle.objects.logics.Project;
+import cycle.objects.logics.WeekFeedScheme;
 import java.util.Date;
 
 /**
@@ -26,5 +30,15 @@ public class Factory {
         GrowCalendar growCalendar = new GrowCalendar(startDate);
         
         return growCalendar;
+    }
+    
+    public Project blankProject(String name) {
+        Project newProject = new Project(
+                name, 
+                new Plant("Plant [" + name + "]"), 
+                new WeekFeedScheme("FeedScheme [" + name + "]"), 
+                new GrowCalendar(new Date()), 
+                new GrowToolsPack());
+        return newProject;
     }
 }

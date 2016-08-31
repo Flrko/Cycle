@@ -7,6 +7,7 @@ package cycle.objects.logics;
 
 import cycle.objects.GrowToolsPack;
 import cycle.objects.Plant;
+import java.util.Date;
 
 /**
  * Growing project class
@@ -14,13 +15,15 @@ import cycle.objects.Plant;
  */
 public class Project {
     
-    private final String name;
+    private final String name;  //Имя
+    private Date startDate;     //Дата начала проекта
+    
     private final Plant plant;
-    private final FeedScheme feedScheme;
+    private final WeekFeedScheme feedScheme;
     private final GrowCalendar growCalendar;
     private final GrowToolsPack growTools;
-
-    public Project(String name, Plant plant, FeedScheme feedScheme, GrowCalendar growCalendar, GrowToolsPack growTools) {
+    
+    public Project(String name, Plant plant, WeekFeedScheme feedScheme, GrowCalendar growCalendar, GrowToolsPack growTools) {
         this.name = name;
         this.plant = plant;
         this.feedScheme = feedScheme;
@@ -32,5 +35,8 @@ public class Project {
 //        this.name = name;
 //        plant = null;
 //    }
-    
+
+    public String getName() {
+        return name;
+    }    
 }

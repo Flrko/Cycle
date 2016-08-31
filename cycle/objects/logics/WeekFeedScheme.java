@@ -17,7 +17,7 @@ import java.util.Map;
  * @author user
  */
 public class WeekFeedScheme extends FeedScheme {
-    private final String name;
+    private String name;
     
     private final Map<CycleStage , List<Week>> plan;
 
@@ -31,6 +31,10 @@ public class WeekFeedScheme extends FeedScheme {
     
     public List<Week> weekList(CycleStage cycleStage) {
         return plan.get(cycleStage);
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
     
     public class Week {

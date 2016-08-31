@@ -10,9 +10,9 @@ package cycle.objects;
  * @author user
  */
 public class Plant {
-    private final String name;
-    private final Integer growTime;
-    private final Integer bloomTime;
+    private String name;
+    private Integer growTime;
+    private Integer bloomTime;
     private int currDay;
     private int height;
 
@@ -21,6 +21,30 @@ public class Plant {
         this.growTime = growTime;
         this.bloomTime = bloomTime;
     }
+
+    public Plant(String name) {
+        this.name = name;
+    }
+
     
     
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGrowTime(Integer growTime) {
+        this.growTime = growTime;
+    }
+
+    public void setBloomTime(Integer bloomTime) {
+        this.bloomTime = bloomTime;
+    }
+
+    public void setCurrDay(int currDay) {
+        this.currDay = currDay;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }    
 }
